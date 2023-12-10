@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Coursera Sidekick",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting", "tabs", "storage","notifications"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "images/icon.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.coursera.org/*"],
+            "js": ["marked.min.js", "content.js","MathJax.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "host_permissions": [
+        "https://www.coursera.org/*",
+        "https://api.together.xyz/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["styles.css"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
