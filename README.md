@@ -1,4 +1,7 @@
 My project is based on Intelligent Browsing theme named "Intelligent Browsing Search on Coursera WebPage(Coursera Sidekick)"  
+Please find presentation link in case video uploaded not working: 
+https://youtu.be/vlf4YAqIR9U
+
 Document I provided for this project are :
 
 
